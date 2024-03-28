@@ -1,13 +1,16 @@
 return {
-  {
-    "navarasu/onedark.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('onedark').setup {
-        style = 'deep'
-      }
-      require('onedark').load()
-    end
-  }
+	{
+		"navarasu/onedark.nvim",
+		-- "AlexvZyl/nordic.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("onedark").setup({
+				-- require("nordic").setup({
+				style = "warm",
+			})
+			require("onedark").load()
+			-- require("nordic").load()
+		end,
+	},
 }
