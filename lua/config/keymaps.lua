@@ -7,6 +7,9 @@
 vim.keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "File Save" })
 vim.keymap.set("n", "<leader>fS", "<cmd>wa<cr>", { desc = "File Save All" })
 
+--esc
+vim.keymap.set({ "n", "i", "v" }, "fd", "<Esc>", { desc = "Esc" })
+
 -- Window
 vim.keymap.set("n", "<leader>wl", "<c-w>l<cr>", { desc = "Move to Right" })
 vim.keymap.set("n", "<leader>wh", "<c-w>h<cr>", { desc = "Move to Right" })
